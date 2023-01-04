@@ -1,0 +1,133 @@
+/* heading */
+.heading {
+  display: flex;
+  justify-content: center;
+  margin-top: 103px !important;
+  font-weight: 500;
+  font-size: 3rem;
+  font-family: serif;
+  left: 457px;
+  height: 43px;
+  color: #940d1b;
+}
+/* content */
+.content {
+  color: #515151;
+  display: flex;
+  padding-left: 14rem;
+  padding-right: 14rem;
+  margin-top: 40px;
+  text-align: center;
+  justify-content: center !important;
+}
+/* imagesection */
+.imgsection {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+}
+/* second section */
+.secondsection {
+  display: flex;
+  margin-top: 120px;
+}
+
+.imagesection2 {
+  justify-content: center;
+  display: flex;
+  /* display: flex; */
+  margin-left: auto;
+  width: 50%;
+  float: right;
+}
+.contentsection2 {
+  width: 50%;
+  float: left;
+  padding-right: 4rem;
+}
+/* content2 */
+.heading2 {
+  color: #000;
+  text-align: left;
+  font-weight: 700;
+  font-size: 1.3rem;
+  font-family: serif;
+  width: 429px;
+}
+/* thirdsection */
+.thirdsection {
+  margin-top: 10rem;
+  /* position: relative; */
+}
+.twoimages {
+  width: 50%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5rem;
+}
+/* image section */
+.oneimage {
+  width: 50%;
+  float: right;
+  height: 70vh;
+}
+.imagefour {
+  background-image: url(block.png);
+  width: 576px !important;
+  min-height: 302px !important;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: start !important;
+  padding: 40px !important;
+
+  color: #fff;
+}
+.imagefour > span {
+  margin-top: 60px;
+}
+.imagefive {
+  background-image: url(hey.png);
+  width: 550px !important;
+  min-height: 152px !important;
+  margin-left: auto;
+  margin-right: 10px;
+  margin-right: auto;
+  margin-top: 35px !important;
+}
+.imagesix {
+  background-image: url(Article.png);
+  height: 490px;
+  width: 472px !important;
+  margin-right: auto !important;
+  color: #fff;
+  padding: 50px !important;
+}
+.imagesix > h4 {
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+/* text */
+.textimage6 {
+  color: #fff;
+  margin: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  top: 1547px;
+  left: 807px;
+  width: 129px;
+  height: 29px;
+}
+@media screen and (max-width:1020px) {
+    .imagesix{
+  margin-left: auto !important;
+
+    }
+    
+    
+}

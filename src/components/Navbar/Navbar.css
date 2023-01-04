@@ -1,0 +1,42 @@
+/* logo */
+.logo{
+    color: #940D1B !important;
+    opacity: 1 !important;
+    font-weight: 700 ;
+    font-size: 2.5rem !important;
+    top: 69px;
+    width: 86px;
+}
+/* navbar links */
+.linkcontainer{
+    display: flex !important;
+    color: black !important;
+    gap: 3000px !important;
+}
+#basic-nav-dropdown{
+    color: black;
+}
+/*  search cart */
+.searchicon,.carticon{
+    color: grey;
+    margin-left: 10px;
+}
+@media screen and (min-width: 987px) {
+    .linkcontainer{
+    justify-content: center !important;
+
+    }
+
+    
+}
+@media screen and (max-width: 987px) {
+    .linkcontainer{
+    justify-content: end !important;
+
+    }
+    .searchicon,.carticon{
+        display: none !important;
+    }
+
+    
+}
