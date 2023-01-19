@@ -1,12 +1,15 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import record from "../../record.json";
-import image from "./Group 240.png";
+import image from "../Images/Group 240.png";
 
-function Corporate() {
+function Corporate({mobile}) {
+  console.log(mobile);
+
+  
   return (
     <div>
-      <Container fluid style={{ marginBottom: "130px", padding: "90px" }}>
+      <Container fluid style={{ marginBottom: "130px", padding: mobile ? "35px" :"90px" }}>
         <Row style={{ display: "grid", justifyContent: "center" }}>
           <span
             style={{

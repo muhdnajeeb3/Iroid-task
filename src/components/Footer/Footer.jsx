@@ -1,21 +1,30 @@
 import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import "./Footer.css";
-import truck from "./fast-delivery.png";
+import truck from "../Images/fast-delivery.png";
 
-function Footer() {
+function Footer({ mobile }) {
+  const small = window.innerWidth < 450;
+
   return (
     <div>
       <Container fluid className="footercontainer">
-        <Row>
+        <Row
+          style={{
+            display: "flex",
+            flexDirection: small ? "column" : "",
+            justifyContent: small ? "center" : "",
+          }}
+        >
           <Col
             className="col-3"
             style={{
               display: "grid",
               flexDirection: "column",
-              justifyContent: "end",
+              justifyContent: small ? "center" : "",
+              width: small ? "100%" : "",
               marginTop: "100px",
-              marginLeft: "auto",
+              marginLeft: small ? "" : "auto",
             }}
           >
             <Row>
@@ -34,12 +43,13 @@ function Footer() {
               marginTop: "50px",
               fontFamily: "sans-serif",
               fontSize: "16px",
-              
+              justifyContent: small ? "center" : "",
+              width: small ? "100%" : "",
             }}
           >
-            <span >QUICK LINKS</span>
+            <span>QUICK LINKS</span>
             <br />
-            <span >Gift Card</span>
+            <span>Gift Card</span>
             <br />
             <span>Lootbook 2021</span>
             <br />
@@ -53,9 +63,11 @@ function Footer() {
               marginTop: "50px",
               fontFamily: "sans-serif",
               fontSize: "16px",
+              justifyContent: small ? "center" : "",
+              width: small ? "100%" : "",
             }}
           >
-            <span >COMPANY</span>
+            <span>COMPANY</span>
             <br />
             <span>About Us</span>
             <br />
@@ -78,22 +90,40 @@ function Footer() {
             <br />
             <span>Sign up & get all our latest updates and special offers</span>
             <br />
-            <input
-              type="text"
-              placeholder="Enter Your Email Address"
-              style={{ height: "3rem", marginTop: "20px" }}
-            />
+            <Row style={{ marginRight: "10px",marginLeft: "1px", marginBottom: "10px" }}>
+              <input
+                type="text"
+                placeholder="Enter Your Email Address"
+                style={{
+                  height: "3rem",
+                  minWidth: mobile ? "10rem " : " ",
+                  marginTop: "20px",
+                }}
+              />
+            </Row>
+
             <Button
               variant=""
-              style={{ background: "#6B6B6B",borderRadius:"0", color: "#fff", height: "3rem" }}
+              style={{
+                background: "#6B6B6B",
+                borderRadius: "0",
+                color: "#fff",
+                height: "3rem",
+              }}
             >
               SUBSCRIBE
             </Button>
           </Col>
         </Row>
-        <hr style={{border:'2px solid #707070'}}/>
-        <Row style={{display:"grid",justifyContent:"center",marginBottom:"20px"}}>
-            <span>© 2021 Alba. All Rights Reserved.</span>
+        <hr style={{ border: "2px solid #707070" }} />
+        <Row
+          style={{
+            display: "grid",
+            justifyContent: "center",
+            marginBottom: "20px",
+          }}
+        >
+          <span>© 2021 Alba. All Rights Reserved.</span>
         </Row>
       </Container>
     </div>

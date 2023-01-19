@@ -14,7 +14,7 @@ function NavbarMain() {
       <Container style={{display:"flex",justifyContent:"space-between"}}>
         <Navbar.Brand href="/" className='logo'>Logo</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav" className="linkcontainer collapse navbar-collapse">
+        <Navbar.Collapse id="basic-navbar-nav"  className="navbar-collapse" style={{marginLeft:"15rem",marginRight:"auto"}}>
           <Nav   style={{color:"yellow"}}>
             <Nav.Link href="/home" id="basic-nav-dropdown" >HOME</Nav.Link>
             <NavDropdown title="MEN" id="basic-nav-dropdown">

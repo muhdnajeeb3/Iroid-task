@@ -1,10 +1,11 @@
 /* heading */
 .heading {
   display: flex;
-  justify-content: center;
-  margin-top: 103px !important;
+  justify-content: center !important;
+  margin-top: 63px !important;
   font-weight: 500;
-  font-size: 3rem;
+  font-size: 2rem;
+  text-align: center;
   font-family: serif;
   left: 457px;
   height: 43px;
@@ -14,8 +15,8 @@
 .content {
   color: #515151;
   display: flex;
-  padding-left: 14rem;
-  padding-right: 14rem;
+  padding:  0 200px 0 200px;
+ 
   margin-top: 40px;
   text-align: center;
   justify-content: center !important;
@@ -78,11 +79,13 @@
 .imagefour {
   background-image: url(block.png);
   width: 576px !important;
+  /* max-width: 576px !important; */
   min-height: 302px !important;
   margin-left: auto;
   margin-right: auto;
   justify-content: start !important;
   padding: 40px !important;
+  max-height: 5rem !important;
 
   color: #fff;
 }
@@ -104,7 +107,8 @@
   width: 472px !important;
   margin-right: auto !important;
   color: #fff;
-  padding: 50px !important;
+  padding: 40px !important;
+  min-height: 5rem !important;
 }
 .imagesix > h4 {
   margin-left: 30px;
@@ -123,11 +127,31 @@
   width: 129px;
   height: 29px;
 }
-@media screen and (max-width:1020px) {
+@media screen and (max-width:1230px) {
     .imagesix{
   margin-left: auto !important;
 
     }
+
     
     
+}
+@media screen and (max-width:600px) {
+  .content{
+    padding:  0 50px 0 50px;
+    
+
+  }
+  .heading{
+    margin-bottom: 2rem;
+  }
+  .imagefive{
+    width: 95% !important;
+    margin-left: 15px !important;
+  }
+  
+
+  
+  
+  
 }

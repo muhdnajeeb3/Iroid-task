@@ -3,5 +3,13 @@
     border: 1px solid #707070;
     color: #FFFFFF;
     min-height: 15rem;
+
+    
+    
+}
+@media screen and (max-width:600px) {
+.footercontainer{
+    padding-left: 3rem !important;
+}
     
 }

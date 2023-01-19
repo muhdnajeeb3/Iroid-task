@@ -8,11 +8,16 @@ import pic5 from "./hey.png";
 import pic6 from "./Article.png";
 import { Col, Container, Row } from "react-bootstrap";
 
-function MainSection() {
+function MainSection({ mobile }) {
+  const big = window.innerWidth < 650;
   return (
     <div className="mainwrapper">
       <div>
-        <span className="heading">Happiness Is Our Culture</span>
+        <Row>
+          <span className="heading" style={{ fontSize: mobile ? "35px" : "" }}>
+            Happiness Is Our Culture
+          </span>
+        </Row>
         <span className="content">
           The productivity and prosperity of an organisation is the reflection
           of the happiness and contentment of its employees. We believe that is
@@ -23,14 +28,29 @@ function MainSection() {
           which gives them opportunities for self growth and skill development.
         </span>
       </div>
-      <div className="imgsection">
-        <img src={pic1} alt="" />
-      </div>
+
+      <Row
+        className=""
+        style={{
+          display: "grid",
+          justifyContent: "center",
+          marginTop: "40px",
+          padding: "10px",
+        }}
+      >
+        <img src={pic1} alt="" style={{ width: "500px", height: "300px" }} />
+      </Row>
       {/* second section */}
       <Container fluid className="secondsection">
-        <Row>
+        <Row style={{ display: "flex", flexDirection: big ? "column " : "" }}>
           <Col className="imagesection2">
-            <img src={pic2} alt="" />
+            <Row>
+              <img
+                src={pic2}
+                alt=""
+                style={{ objectFit: "contain", marginBottom: "10px" }}
+              />
+            </Row>
           </Col>
           <Col className="contentsection2">
             <div>
@@ -144,67 +164,72 @@ function MainSection() {
         </Row>
       </Container>
       {/* Third Sectiion */}
-
-      <Row
-        style={{ display: "flex", flexDirection: "row", marginTop: "10rem" }}
-      >
-        <Col>
-          <Row
-            style={{
-              display: "flex",
-              flexDirection: "column",
-            }}
-          >
-            <Col>
-              <Row>
-                <div className="imagefour">
-                  <h4>OurVision</h4>
-                  <br />
-                  <span>
-                    Our vision is to provide prime value to customers by
-                    delivering supreme quality undergarments in the global
-                    market with the intent to touch the lives of our employees,
-                    immediate society and the world community with the
-                    understanding -‘we exist because they exist’.
-                  </span>
-                </div>
-              </Row>
-            </Col>
-            <Col>
-              <Row>
-                <div className="imagefive">{/*  */}</div>
-              </Row>
-            </Col>
-          </Row>
-        </Col>
-        <Col>
-          <Row>
-            <div className="imagesix">
-              <h4>Our Mission</h4>
-              <ul>
-                <li>
-                  Ensure the quality of the product excellence through
-                  monitoring at every stages of production till delivery and
-                  customer satisfaction.
-                </li>
-                <li>
-                  Focus on widening the business every year through a
-                  progressive approach of associating with prospective textile
-                  shops, appointing distributors and contracting with business
-                  agents.
-                </li>
-                <li>
-                  Focus on widening the business every year through a
-                  progressive approach of associating with prospective textile
-                  shops, appointing distributors and contracting with business
-                  agents.
-                </li>
-              </ul>
-              {/* <img src={pic6} alt="" style={{width:"429px",hieght:"496px",left:"50px"}}/> */}
-            </div>
-          </Row>
-        </Col>
-      </Row>
+      <Container>
+        <Row
+          style={{ display: "flex", flexDirection: "row", marginTop: "10rem" }}
+        >
+          <Col>
+            <Row
+              style={{
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              <Col>
+                <Row>
+                  <div className="imagefour">
+                    <Row>
+                      <h4>OurVision</h4>
+                      <br />
+                      <span>
+                        Our vision is to provide prime value to customers by
+                        delivering supreme quality undergarments in the global
+                        market with the intent to touch the lives of our
+                        employees, immediate society and the world community
+                        with the understanding -‘we exist because they exist’.
+                      </span>
+                    </Row>
+                  </div>
+                </Row>
+              </Col>
+              <Col>
+                <Row>
+                  <div className="imagefive"></div>
+                </Row>
+              </Col>
+            </Row>
+          </Col>
+          <Col>
+            <Row>
+              <div className="imagesix">
+                <Row>
+                  <h4>Our Mission</h4>
+                  <ul>
+                    <li>
+                      Ensure the quality of the product excellence through
+                      monitoring at every stages of production till delivery and
+                      customer satisfaction.
+                    </li>
+                    <li>
+                      Focus on widening the business every year through a
+                      progressive approach of associating with prospective
+                      textile shops, appointing distributors and contracting
+                      with business agents.
+                    </li>
+                    <li>
+                      Focus on widening the business every year through a
+                      progressive approach of associating with prospective
+                      textile shops, appointing distributors and contracting
+                      with business agents.
+                    </li>
+                  </ul>
+                  {/* <img src={pic6} alt="" style={{width:"429px",hieght:"496px",left:"50px"}}/> */}
+                </Row>
+              </div>
+            </Row>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 }
