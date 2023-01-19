@@ -1,11 +1,9 @@
 import React from "react";
 import "./MainSection.css";
-import pic1 from "./pic1.png";
-import pic2 from "./Group 467.png";
-import pic3 from "./Group 446.png";
-import pic4 from "./block.png";
-import pic5 from "./hey.png";
-import pic6 from "./Article.png";
+import pic1 from "../Images/pic1.png";
+import pic2 from "../Images/Group 467.png";
+import pic3 from "../Images/Group 446.png";
+
 import { Col, Container, Row } from "react-bootstrap";
 
 function MainSection({ mobile }) {

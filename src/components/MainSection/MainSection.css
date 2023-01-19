@@ -46,7 +46,7 @@
 .contentsection2 {
   width: 50%;
   float: left;
-  padding-right: 4rem;
+  padding-right: 5rem !important;
 }
 /* content2 */
 .heading2 {
